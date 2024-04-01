@@ -1,5 +1,6 @@
 #include <iostream>
 #include <cmath>
+#include <iomanip>
 using namespace std;
 
 
@@ -28,7 +29,7 @@ int main()
         cout << "radius of cylinder";
         cin >> radius;
         float re = cal_m1(load, radius);
-        cout << re;
+        cout<<fixed<< setprecision(2) << re;
     }
     else if (choose == 2)
     {
@@ -42,7 +43,7 @@ int main()
         cout << "radius of cylindrical shaft";
         cin >> radius;
         float re = cal_m2(matr, len, ang, radius);
-        cout<< re;
+        cout<<fixed<< setprecision(2) << re;
 
 
     }
